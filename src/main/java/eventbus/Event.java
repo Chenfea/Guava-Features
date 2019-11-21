@@ -18,7 +18,6 @@ public class Event {
     @Test
     public void testEventBus() {
         EventBus eventBus = new EventBus();
-        System.out.println("this is a test");
         eventBus.register(new Event());
         eventBus.post("hello, this is new message!yeah");
     }
